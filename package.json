@@ -1,0 +1,19 @@
+{
+  "name": "tasty",
+  "version": "0.0.0",
+  "description": "A delicious-like social bookmarking app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rissem/tasty.git"
+  },
+  "author": "Mike Risse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rissem/tasty/issues"
+  },
+  "homepage": "https://github.com/rissem/tasty"
+}
