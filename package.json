@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rissem/tasty/issues"
   },
-  "homepage": "https://github.com/rissem/tasty"
+  "homepage": "https://github.com/rissem/tasty",
+  "dependencies": {
+    "express": "~4.1.2"
+  }
 }
