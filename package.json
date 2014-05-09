@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rissem/tasty",
   "dependencies": {
-    "express": "~4.1.2"
+    "express": "~4.1.2",
+    "serve-static": "~1.1.0"
   }
 }
