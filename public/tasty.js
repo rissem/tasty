@@ -1,1 +1,1 @@
-console.log("hello world");
+console.log("hello client side console");
