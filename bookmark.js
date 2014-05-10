@@ -1,5 +1,8 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
+
+var mongoUri = process.env.MONGOLAB_URI || 'mongodb://localhost/test'
+
+mongoose.connect(mongoUri);
 
 var bookmarkSchema = mongoose.Schema({
     title: String,
