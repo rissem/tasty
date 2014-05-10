@@ -13,13 +13,16 @@ app.get('/hello.txt', function(req, res){
 });
 
 app.get("/bookmarks.json", function(req, res){
-	//fetch all the bookmarks
+	Bookmark.find(function(err, bookmarks){
+		res.send(200, bookmarks);
+	});
 });
 
 app.post('/bookmark', function(req, res){
 	var bookmark = new Bookmark();
 	bookmark.title = req.body.title;
 	bookmark.description = req.body.description;
+	bookmark.url = req.body.url;
 	bookmark.save(function(err){
 		if (err){
 			console.error("ERROR", err);

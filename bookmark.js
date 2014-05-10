@@ -4,6 +4,7 @@ mongoose.connect('mongodb://localhost/test');
 var bookmarkSchema = mongoose.Schema({
     title: String,
     description: String,
+    url: String,
     tags: Array    
 });
 
