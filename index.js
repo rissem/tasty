@@ -13,7 +13,11 @@ app.get('/hello.txt', function(req, res){
 });
 
 app.get("/bookmarks.json", function(req, res){
-	Bookmark.find(function(err, bookmarks){
+	var mongoSelector = {};
+	if (req.query.searchTerm){
+		mongoSelector = {title: new RegExp(req.query.searchTerm, "i")};
+	}
+	Bookmark.find(mongoSelector, function(err, bookmarks){
 		res.send(200, bookmarks);
 	});
 });
